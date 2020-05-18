@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/twigstick/static/css/main.5f361e03.chunk.css",
+    "main.js": "/twigstick/static/js/main.beeb72ac.chunk.js",
+    "main.js.map": "/twigstick/static/js/main.beeb72ac.chunk.js.map",
+    "runtime-main.js": "/twigstick/static/js/runtime-main.5dfe2939.js",
+    "runtime-main.js.map": "/twigstick/static/js/runtime-main.5dfe2939.js.map",
+    "static/js/2.825d39eb.chunk.js": "/twigstick/static/js/2.825d39eb.chunk.js",
+    "static/js/2.825d39eb.chunk.js.map": "/twigstick/static/js/2.825d39eb.chunk.js.map",
+    "index.html": "/twigstick/index.html",
+    "precache-manifest.d87838fe568f9abc6b83270aa826b8d2.js": "/twigstick/precache-manifest.d87838fe568f9abc6b83270aa826b8d2.js",
+    "service-worker.js": "/twigstick/service-worker.js",
+    "static/css/main.5f361e03.chunk.css.map": "/twigstick/static/css/main.5f361e03.chunk.css.map",
+    "static/js/2.825d39eb.chunk.js.LICENSE.txt": "/twigstick/static/js/2.825d39eb.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/twigstick/static/media/logo.5d5d9eef.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5dfe2939.js",
+    "static/js/2.825d39eb.chunk.js",
+    "static/css/main.5f361e03.chunk.css",
+    "static/js/main.beeb72ac.chunk.js"
+  ]
+}
