@@ -1,68 +1,44 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import './App.css';
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import { Switch, Route } from 'react-router-dom';
+import { __RouterContext } from 'react-router';
+
 import About from './Components/About';
+import Projects from './Components/Projects';
+import Home from './Components/Home';
+import Games from './Components/Games';
+import Contact from './Components/Contact';
+import Navbar from './Components/Navbar';
 
-function App() {
+import { useTransition, animated } from 'react-spring';
+
+const App = () => {
+  const { location } = useContext(__RouterContext);
+
+  const transitions = useTransition(location, (location) => location.pathname, {
+    from: { opacity: 0, transform: 'translate(100%, 0)' },
+    enter: { opacity: 1, transform: 'translate(0%, 0)' },
+    leave: { opacity: 0, transform: 'translate(-100%, 0)' },
+  });
+
   return (
-    <Router>
-      <div>
-        <nav>
-          <ul>
-            <li>
-              <Link to='/projects'>PROJECTS</Link>
-            </li>
-            <li>
-              <Link to='/about'>GAMES</Link>
-            </li>
-            <li>
-              <Link to='/twigstick'>HOME</Link>
-            </li>
-            <li>
-              <Link to='/contact'>CONTACT</Link>
-            </li>
-            <li>
-              <Link to='/about'>ABOUT</Link>
-            </li>
-          </ul>
-        </nav>
-
-        <Switch>
-          <Route path='/projects'>
-            <Projects />
-          </Route>
-          <Route path='/games'>
-            <Games />
-          </Route>
-          <Route path='/twigstick'>
-            <Home />
-          </Route>
-          <Route path='/contact'>
-            <Contact />
-          </Route>
-          <Route path='/about'>
-            <About />
-          </Route>
-        </Switch>
-      </div>
-    </Router>
+    <>
+      <Navbar />
+      <main>
+        {transitions.map(({ item, props }) => (
+          <animated.div key={item.key} style={props}>
+            <Switch location={item}>
+              <Route exact path='/projects' component={Projects} />
+              <Route exact path='/games' component={Games} />
+              <Route exact path='/twigstick' component={Home} />
+              <Route exact path='/contact' component={Contact} />
+              <Route exact path='/about' component={About} />
+            </Switch>
+          </animated.div>
+        ))}
+      </main>
+    </>
   );
-}
-
-function Home() {
-  return <h2>Home</h2>;
-}
-
-function Projects() {
-  return <h2>Projects</h2>;
-}
-
-function Games() {
-  return <h2>Games</h2>;
-}
-
-function Contact() {
-  return <h2>Contact</h2>;
-}
+};
 
 export default App;
