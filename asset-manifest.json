@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/twigstick/static/css/main.eab24d3c.chunk.css",
-    "main.js": "/twigstick/static/js/main.c36f2364.chunk.js",
-    "main.js.map": "/twigstick/static/js/main.c36f2364.chunk.js.map",
+    "main.js": "/twigstick/static/js/main.171084a5.chunk.js",
+    "main.js.map": "/twigstick/static/js/main.171084a5.chunk.js.map",
     "runtime-main.js": "/twigstick/static/js/runtime-main.5dfe2939.js",
     "runtime-main.js.map": "/twigstick/static/js/runtime-main.5dfe2939.js.map",
-    "static/js/2.bf321a7c.chunk.js": "/twigstick/static/js/2.bf321a7c.chunk.js",
-    "static/js/2.bf321a7c.chunk.js.map": "/twigstick/static/js/2.bf321a7c.chunk.js.map",
+    "static/js/2.10180a1f.chunk.js": "/twigstick/static/js/2.10180a1f.chunk.js",
+    "static/js/2.10180a1f.chunk.js.map": "/twigstick/static/js/2.10180a1f.chunk.js.map",
     "index.html": "/twigstick/index.html",
-    "precache-manifest.f9e44219ba66593e68166fd54d0e8c6e.js": "/twigstick/precache-manifest.f9e44219ba66593e68166fd54d0e8c6e.js",
+    "precache-manifest.1abc0b8a330b437ce8fb9d3e8abdba7c.js": "/twigstick/precache-manifest.1abc0b8a330b437ce8fb9d3e8abdba7c.js",
     "service-worker.js": "/twigstick/service-worker.js",
     "static/css/main.eab24d3c.chunk.css.map": "/twigstick/static/css/main.eab24d3c.chunk.css.map",
-    "static/js/2.bf321a7c.chunk.js.LICENSE.txt": "/twigstick/static/js/2.bf321a7c.chunk.js.LICENSE.txt"
+    "static/js/2.10180a1f.chunk.js.LICENSE.txt": "/twigstick/static/js/2.10180a1f.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.5dfe2939.js",
-    "static/js/2.bf321a7c.chunk.js",
+    "static/js/2.10180a1f.chunk.js",
     "static/css/main.eab24d3c.chunk.css",
-    "static/js/main.c36f2364.chunk.js"
+    "static/js/main.171084a5.chunk.js"
   ]
 }

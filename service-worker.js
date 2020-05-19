@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/twigstick/precache-manifest.f9e44219ba66593e68166fd54d0e8c6e.js"
+  "/twigstick/precache-manifest.1abc0b8a330b437ce8fb9d3e8abdba7c.js"
 );
 
 self.addEventListener('message', (event) => {
